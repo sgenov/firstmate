@@ -1,0 +1,3 @@
+ok - a resurfacing handling successor stays alive and supervises instead of going blind
+not ok - handling successor never recovered the generation opened after it started: 
+EXIT=1

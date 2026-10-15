@@ -1,0 +1,20 @@
+== [after] tree=/home/axsdev/.no-mistakes/worktrees/f128ca3cb7cf/01M4ZWCSTABEB4W1CSDBR4NNWP lab=/tmp/fm-lab.fD9JpS
+successor pid=3944479 alive=yes
+marker after start-up: announced:downtime:inherited.1.aaa
+rearm-resurface lines before note: 0
+$ fm-inbox.sh note 'captain: please look at the flaky deploy'
+queued 1792072337-7lQMyQ
+  captain: please look at the flaky deploy
+  firstmate will pick this up at its next check.
+note exit=0
+marker right after note: pending:downtime:3946194.1792072337.L1U5bj
+--- watcher stdout after note ---
+check: rearm-resurface
+---------------------------------
+rearm-resurface lines: 1
+marker 8s after note: announced:downtime:3946194.1792072337.L1U5bj
+successor alive: no
+$ fm-inbox.sh ready
+{"schema":"fm-primary-ready.v1","home":"tmp/fm-lab.fD9JpS","observed_at":"2026-10-15T13:52:26Z","lock":{"state":"free","pid":null,"live_harness":false},"wake_consumer":{"state":"unknown","reason":"supervision-model-unknown-for-home","beacon_age_seconds":7},"posture":{"state":"present"},"can_receive":false}
+lab removed: yes
+EXIT=0

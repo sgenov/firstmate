@@ -1,0 +1,16 @@
+== [after] lab=/tmp/fm-lab.8JxchX
+watcher lock pid=3971248
+marker after start-up: announced:downtime:inherited.1.aaa (generation inherited.1.aaa)
+$ fm-watch-arm.sh --handling-delivered inherited.1.aaa --watcher-pid 3971248
+exit=0
+marker after handling-delivered: announced:handling:inherited.1.aaa
+$ host hand-back: fm_recovery_marker_publish $STATE/.watcher-down downtime
+exit=0
+marker after hand-back: pending:downtime:inherited.1.aaa
+--- watcher stdout ---
+----------------------
+rearm-resurface lines: 0
+marker 6s after hand-back: pending:downtime:inherited.1.aaa
+successor alive: yes
+lab removed: yes
+EXIT=0

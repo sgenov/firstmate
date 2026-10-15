@@ -1,0 +1,19 @@
+== [baseline-9b1ada0] tree=/tmp/fm-base.DZyhGi lab=/tmp/fm-lab.xlzNwa
+successor pid=3949371 alive=yes
+marker after start-up: announced:downtime:inherited.1.aaa
+rearm-resurface lines before note: 0
+$ fm-inbox.sh note 'captain: please look at the flaky deploy'
+queued 1792072350-1qRPvS
+  captain: please look at the flaky deploy
+  firstmate will pick this up at its next check.
+note exit=0
+marker right after note: pending:downtime:3951904.1792072350.gEmVkj
+--- watcher stdout after note ---
+---------------------------------
+rearm-resurface lines: 0
+marker 8s after note: pending:downtime:3951904.1792072350.gEmVkj
+successor alive: yes
+$ fm-inbox.sh ready
+{"schema":"fm-primary-ready.v1","home":"tmp/fm-lab.xlzNwa","observed_at":"2026-10-15T13:52:38Z","lock":{"state":"free","pid":null,"live_harness":false},"wake_consumer":{"state":"unknown","reason":"supervision-model-unknown-for-home","beacon_age_seconds":0},"posture":{"state":"present"},"can_receive":false}
+lab removed: yes
+EXIT=0
